@@ -14,8 +14,8 @@ class IndexController extends Controller
      */
     public function index()
     {
-        echo Cache::put('name', 'Taylor');
-        echo Cache::get('name');
-        return "test";
+        echo Redis::set('name','woooo');
+        echo Redis::get('name');
+        //return "test";
     }
 }
