@@ -14,8 +14,21 @@ class IndexController extends Controller
      */
     public function index()
     {
+
+
+        //测试通过，redis 操作方式
+
         echo Redis::set('name','woooo');
         echo Redis::get('name');
+
+        //cache 方式操作,需要填写分钟日期
+        if(!Cache::has('name')){
+            Cache::put('name','test',10);
+        }
+        return Cache::get('name');
+
+
+
         //return "test";
     }
 }
