@@ -29,6 +29,6 @@ class IndexController extends Controller
 
 
 
-        //return "test";
+        return "test";
     }
 }
