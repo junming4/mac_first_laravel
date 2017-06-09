@@ -22,19 +22,6 @@
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~5.7"
     },
-    "private": true,
-    "devDependencies": {
-        "gulp": "^3.8.8",
-        "laravel-elixir": "*",
-        "babel-plugin-transform-runtime": "^6.9.0",
-        "vue": "^1.0.24",
-        "vueify": "^8.5.4"
-    },
-    "browserify": {
-        "transform": [
-            "vueify"
-        ]
-    },
     "autoload": {
         "classmap": [
             "database"
