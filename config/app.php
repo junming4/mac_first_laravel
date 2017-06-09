@@ -64,7 +64,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => env('APP_TIMEZONE', 'UTC'),
 
     /*
     |--------------------------------------------------------------------------
@@ -77,7 +77,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => env('APP_LANG', 'en'),
 
     /*
     |--------------------------------------------------------------------------
@@ -181,6 +181,11 @@ return [
          * phper add
          */
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Laravel\Scout\ScoutServiceProvider::class,//全文索引
+        ScoutEngines\Elasticsearch\ElasticsearchProvider::class, //特定的索引Elasticsearch
+        Latrell\Swagger\SwaggerServiceProvider::class,//接口文档
+        Collective\Html\HtmlServiceProvider::class, //html构建器
+
 
     ],
 

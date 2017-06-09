@@ -12,10 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //return view('welcome');
+    return view('vue');
+});
+
+Route::get('/test',function (){
+   return "ok";
 });
 
 
-Route::group(['namespace' => 'Home'], function ($route) {
+/*Route::group(['namespace' => 'Home'], function ($route) {
     $route->get('/test',['as'=>'index','uses' => 'IndexController@index']);
-});
+});*/

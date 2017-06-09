@@ -10,3 +10,13 @@
                 Cache::put('name','test',10);
             }
             return Cache::get('name');
+#这里实现这个东西主要是为了，方便自己以后构建后台和使用
+    1)、安装全文索引这个东西，laravel/scout
+      安装Elasticsearch
+      `scout`本身不支持Elasticsearch.php 需要安装其他插件整合一下
+        composer require elasticsearch/elasticsearch
+        composer require tamayo/laravel-scout-elastic
+        并且引入数据
+#加入中文数据
+    svn export https://github.com/caouecs/Laravel-lang/trunk/src/zh-CN resources/lang/zh-CN 
+#现在先测试功能以后在进行，剥离这一块的模型

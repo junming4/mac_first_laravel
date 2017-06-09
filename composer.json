@@ -7,14 +7,33 @@
     "require": {
         "php": ">=5.6.4",
         "barryvdh/laravel-ide-helper": "^2.3",
+        "elasticsearch/elasticsearch": "^5.2",
+        "garveen/laravoole": "^0.5.1",
         "laravel/framework": "5.4.*",
+        "laravel/scout": "^3.0",
         "laravel/tinker": "~1.0",
-        "predis/predis": "^1.1"
+        "laravelcollective/html": "^5.4",
+        "latrell/swagger": "dev-master",
+        "predis/predis": "^1.1",
+        "tamayo/laravel-scout-elastic": "^3.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~5.7"
+    },
+    "private": true,
+    "devDependencies": {
+        "gulp": "^3.8.8",
+        "laravel-elixir": "*",
+        "babel-plugin-transform-runtime": "^6.9.0",
+        "vue": "^1.0.24",
+        "vueify": "^8.5.4"
+    },
+    "browserify": {
+        "transform": [
+            "vueify"
+        ]
     },
     "autoload": {
         "classmap": [
