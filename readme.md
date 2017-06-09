@@ -18,5 +18,7 @@
         composer require tamayo/laravel-scout-elastic
         并且引入数据
 #加入中文数据
-    svn export https://github.com/caouecs/Laravel-lang/trunk/src/zh-CN resources/lang/zh-CN 
+    svn export https://github.com/caouecs/Laravel-lang/trunk/src/zh-CN resources/lang/zh-CN
+#加入表注释插件
+     zedisdog/laravel-schema-extend
 #现在先测试功能以后在进行，剥离这一块的模型
