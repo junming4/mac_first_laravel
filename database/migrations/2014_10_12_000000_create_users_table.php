@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
+use zedisdog\LaravelSchemaExtend\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
@@ -14,12 +14,15 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('password');
-            $table->rememberToken();
+            $table->increments('user_id')->comment('用户ID');
+            $table->string('user_name')->comment('用户名')->unique();
+            $table->char('mobile')->comment('手机号码');
+            $table->string('email')->comment('邮箱');
+            $table->string('password')->comment('密码');
+            $table->rememberToken()->comment('忘记密码toke');
             $table->timestamps();
+            $table->unique(['mobile','email'],'mobile_to_email');
+            $table->comment = '用户表';
         });
     }
 
