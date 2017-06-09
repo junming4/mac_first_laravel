@@ -15,7 +15,8 @@
         "laravelcollective/html": "^5.4",
         "latrell/swagger": "dev-master",
         "predis/predis": "^1.1",
-        "tamayo/laravel-scout-elastic": "^3.0"
+        "tamayo/laravel-scout-elastic": "^3.0",
+        "zedisdog/laravel-schema-extend": "^0.6.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
