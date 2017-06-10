@@ -20,6 +20,15 @@ Route::get('/test',function (){
    return "ok";
 });
 
+Route::get('/isEmail',function (){
+   $res =  isEmail('2284876299@qq.com');
+   if($res) {
+       return "ok";
+   }else{
+       return "no";
+   }
+});
+
 
 /*Route::group(['namespace' => 'Home'], function ($route) {
     $route->get('/test',['as'=>'index','uses' => 'IndexController@index']);

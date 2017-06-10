@@ -22,4 +22,13 @@
 #加入表注释插件
      zedisdog/laravel-schema-extend
 #现在先测试功能以后在进行，剥离这一块的模型
+    npm install
     npm run dev 
+    
+#添加自定义函数
+        在 "psr-4"后面加
+        "files": [
+            "App/Helpers/functions.php"
+        ]
+       这里需要，运行一下composer
+       composer dump-autoload 
