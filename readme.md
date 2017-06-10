@@ -22,3 +22,4 @@
 #加入表注释插件
      zedisdog/laravel-schema-extend
 #现在先测试功能以后在进行，剥离这一块的模型
+    npm run dev 
