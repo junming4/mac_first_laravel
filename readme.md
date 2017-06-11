@@ -1,4 +1,4 @@
-#mac laravel 第一个测试
+#make easy to use laravel 
 #redis 和 cache 去操作redis 区别
     
             //测试通过，redis 操作方式，不用填写时间
@@ -32,3 +32,7 @@
         ]
        这里需要，运行一下composer
        composer dump-autoload 
+#让观察者多一个目录出来：
+        app/Observers
+        目前文件： app/Observers/UserObserver.php【
+        需要在app/Providers/EventServiceProvider.php】添加文件：User::observe(new UserObserver());

@@ -13,7 +13,17 @@
 
 Route::get('/', function () {
     //return view('welcome');
-    return view('vue');
+    //return view('vue');
+
+    $res = \App\Models\User::create([
+        'user_name' => '肖俊明',
+        'mobile' => '13512719787',
+        'email' => '2284876299@qq.com',
+        'password' => 13333
+    ]);
+
+    dump($res);
+
 });
 
 Route::get('/test',function (){
