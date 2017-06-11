@@ -33,6 +33,6 @@
        这里需要，运行一下composer
        composer dump-autoload 
 #让观察者多一个目录出来：
-        app/Observers
-        目前文件： app/Observers/UserObserver.php【
-        需要在app/Providers/EventServiceProvider.php】添加文件：User::observe(new UserObserver());
+        ##app/Observers
+        ##目前文件： app/Observers/UserObserver.php【
+        ##需要在app/Providers/EventServiceProvider.php】添加文件：User::observe(new UserObserver());
