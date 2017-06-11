@@ -40,6 +40,15 @@ return [
         ],
 
         'mysql' => [
+
+            //读写分离设置，需要去掉原本的host和 port
+            /*'read' => [
+                ['host' => '127.0.0.1','port' => 3306],
+                ['host' => '127.0.0.1','port' => 3306],
+            ],
+            'write' => [
+                'host' => '127.0.0.1', 'port'=> 3306
+            ],*/
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
@@ -52,6 +61,28 @@ return [
             'prefix' => env('DB_PREFIX', ''),
             'strict' => true,
             'engine' => null,
+        ],
+
+        /**
+         * 这个是多个库才用到的
+         * todo 自定义mysql连接,访问media库，只有在model直接指定访问就行了
+         * protected $connection = 'media';
+         */
+        'media' => [
+            'read' => [
+                ['host' => '127.0.0.1','port' => 3306],
+                ['host' => '127.0.0.1','port' => 3306],
+            ],
+            'write' => [
+                'host' => '127.0.0.1', 'port'=> 3306
+            ],
+            'driver'    => 'mysql',
+            'database'  => 'media',
+            'username'  => 'test',
+            'password'  => '123456',
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
         ],
 
         'pgsql' => [

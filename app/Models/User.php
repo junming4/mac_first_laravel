@@ -10,6 +10,12 @@ class User extends Authenticatable
     use Notifiable;
 
     /**
+     * 如果不是id 需要重新指定为 user_id
+     * @var string
+     */
+    protected $primaryKey = 'user_id';
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var array
