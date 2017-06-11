@@ -15,7 +15,7 @@ class QueryListener
      * @param  QueryExecuted  $event
      * @return void
      */
-    public function handle(QueryExecuted $event)
+    public function handle(QueryExecuted $event): void
     {
         //
         $sql = str_replace("?", "'%s'", $event->sql);

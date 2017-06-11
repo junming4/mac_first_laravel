@@ -15,7 +15,7 @@ if (!function_exists('isMobile')) {
      * @auth xiaojunming<xiaojunming@eelly.net>
      * @since 2017/06/10 22:45:56
      */
-    function isMobile($mobile)
+    function isMobile($mobile): bool
     {
         $mobile = trim($mobile);
         if (strlen($mobile) < 1) {
@@ -39,7 +39,7 @@ if (!function_exists('isEmail')) {
      * @auth xiaojunming<xiaojunming@eelly.net>
      * @since 2017/06/10
      */
-    function isEmail($email)
+    function isEmail($email): bool
     {
         $email = trim($email);
         if (strlen($email) < 1) {
