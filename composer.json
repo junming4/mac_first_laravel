@@ -9,6 +9,7 @@
         "barryvdh/laravel-ide-helper": "^2.3",
         "elasticsearch/elasticsearch": "^5.2",
         "garveen/laravoole": "^0.5.1",
+        "jenssegers/mongodb": "^3.2",
         "laravel/framework": "5.4.*",
         "laravel/scout": "^3.0",
         "laravel/tinker": "~1.0",

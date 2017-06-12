@@ -36,3 +36,5 @@
         ##app/Observers
         ##目前文件： app/Observers/UserObserver.php【
         ##需要在app/Providers/EventServiceProvider.php】添加文件：User::observe(new UserObserver());
+# 安装mongodb 插件jenssegers/laravel-mongodb
+       https://github.com/jenssegers/laravel-mongodb****

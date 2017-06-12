@@ -185,6 +185,7 @@ return [
         ScoutEngines\Elasticsearch\ElasticsearchProvider::class, //特定的索引Elasticsearch
         Latrell\Swagger\SwaggerServiceProvider::class,//接口文档
         Collective\Html\HtmlServiceProvider::class, //html构建器
+        Jenssegers\Mongodb\MongodbServiceProvider::class, //mongodb 操作器
 
 
     ],
