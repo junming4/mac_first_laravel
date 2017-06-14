@@ -186,6 +186,7 @@ return [
         Latrell\Swagger\SwaggerServiceProvider::class,//接口文档
         Collective\Html\HtmlServiceProvider::class, //html构建器
         Jenssegers\Mongodb\MongodbServiceProvider::class, //mongodb 操作器
+        VladimirYuldashev\LaravelQueueRabbitMQ\LaravelQueueRabbitMQServiceProvider::class, //LaravelQueueRabbitMQ
 
 
     ],

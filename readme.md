@@ -40,3 +40,5 @@
        https://github.com/jenssegers/laravel-mongodb****
        存在一个案例：
        app/Models/TestMongo.php
+# 安装 队列插件 vladimir-yuldashev/laravel-queue-rabbitmq:5.4
+    
