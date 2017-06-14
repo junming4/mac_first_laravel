@@ -42,3 +42,5 @@
        app/Models/TestMongo.php
 # 安装 队列插件 vladimir-yuldashev/laravel-queue-rabbitmq:5.4
     
+# 安装 队列表：
+    php artisan queue:table
