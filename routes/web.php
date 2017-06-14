@@ -17,8 +17,8 @@ Route::get('/', function () {
     //$res = \App\Models\User::find(2);
     //dump($res);
 
-    $res = (new \App\Models\TestMongo)->createInfo();
-    var_dump($res);
+    //$res = (new \App\Models\TestMongo)->createInfo();
+    //var_dump($res);
 
     /*$res = \App\Models\User::create([
         'user_name' => '肖俊明',
@@ -48,3 +48,7 @@ Route::get('/isEmail',function (){
 /*Route::group(['namespace' => 'Home'], function ($route) {
     $route->get('/test',['as'=>'index','uses' => 'IndexController@index']);
 });*/
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
