@@ -28,12 +28,14 @@ Route::get('/', function () {
     ]);
 
     dump($res);*/
+    for ($i=0; $i <= 1000; $i++){
+        $this->dispatch(new \App\Jobs\TestJob());
+    }
+
 
 });
 
-Route::get('/test',function (){
-   return "ok";
-});
+Route::get('/test','Home\IndexController@index');
 
 Route::get('/isEmail',function (){
    $res =  isEmail('2284876299@qq.com');

@@ -17,7 +17,7 @@ class IndexController extends Controller
 
 
         //测试通过，redis 操作方式
-
+/*
         echo Redis::set('name','woooo');
         echo Redis::get('name');
 
@@ -25,10 +25,11 @@ class IndexController extends Controller
         if(!Cache::has('name')){
             Cache::put('name','test',10);
         }
-        return Cache::get('name');
+        return Cache::get('name');*/
 
-
-
+        for ($i=0; $i <= 100000; $i++) {
+            $this->dispatch(new \App\Jobs\TestJob());
+        }
         return "test";
     }
 }

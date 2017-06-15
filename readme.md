@@ -43,4 +43,6 @@
 # 安装 队列插件 vladimir-yuldashev/laravel-queue-rabbitmq:5.4
     
 # 安装 队列表：
+    php make:job TestJob 目录在 job中
     php artisan queue:table
+    
