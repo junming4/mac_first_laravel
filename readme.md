@@ -45,4 +45,5 @@
 # 安装 队列表：
     php make:job TestJob 目录在 job中
     php artisan queue:table
+#创建加权限后台分支:addRole 2017/05/16   
     
