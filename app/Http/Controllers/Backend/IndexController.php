@@ -16,9 +16,7 @@ class IndexController extends Controller
     //
     public function index()
     {
-        $res = $this->userContract->find(1);
-        dd($res);exit;
-        redirect(route('admin::test'));
+        return view('backend.index');
        // return "index";
     }
 
