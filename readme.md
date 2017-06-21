@@ -41,6 +41,7 @@
        存在一个案例：
        app/Models/TestMongo.php
 # 安装 队列插件 vladimir-yuldashev/laravel-queue-rabbitmq:5.4
+    访问地址：http://localhost:15672/
     
 # 安装 队列表：
     php make:job TestJob 目录在 job中
